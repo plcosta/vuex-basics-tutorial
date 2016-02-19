@@ -1,10 +1,10 @@
 <template>
-  Count ins {{ count }}
+  Count is {{ count }}
 </template>
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         count: 0
       }

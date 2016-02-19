@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
+    <h3>Increment:</h3>
+    <increment></increment>
+    <h3>Counter:</h3>
+    <counter></counter>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Counter from './components/CounterDisplay.vue'
+import Increment from './components/IncrementButton.vue'
 
 export default {
   components: {
-    Hello
+    Counter,
+    Increment
   }
 }
 </script>

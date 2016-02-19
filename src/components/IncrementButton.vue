@@ -5,7 +5,7 @@
 <script>
   export default {
     methods: {
-      activate() {
+      activate () {
         console.log('+1 Pressed')
       }
     }
