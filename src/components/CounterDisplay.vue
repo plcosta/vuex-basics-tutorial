@@ -1,18 +1,15 @@
 <template>
-  Count is {{ count }}
+  Count is {{ sharedState.counter }}
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        count: 0
-      }
-    },
-    events: {
-      increment () {
-        this.count ++
-      }
+import store from '../store'
+
+export default {
+  data () {
+    return {
+      sharedState: store.state
     }
   }
+}
 </script>

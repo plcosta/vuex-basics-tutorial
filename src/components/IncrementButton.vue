@@ -3,12 +3,18 @@
 </template>
 
 <script>
-  export default {
-    methods: {
-      activate () {
-        // Send an event upwards to be picked up by App
-        this.$dispatch('button-pressed')
-      }
+import store from '../store'
+
+export default {
+  data () {
+    return {
+      sharedState: store.state
+    }
+  },
+  methods: {
+    activate () {
+      this.sharedState.counter += 1
     }
   }
+}
 </script>
