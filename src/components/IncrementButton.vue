@@ -6,14 +6,9 @@
 import store from '../store'
 
 export default {
-  data () {
-    return {
-      sharedState: store.state
-    }
-  },
   methods: {
     activate () {
-      this.sharedState.counter += 1
+      store.dispatch('INCREMENT')
     }
   }
 }
