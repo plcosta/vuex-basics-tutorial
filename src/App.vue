@@ -15,6 +15,12 @@ export default {
   components: {
     Counter,
     Increment
+  },
+  events: {
+    'button-pressed': function () {
+      // Send a message to all children
+      this.$broadcast('increment')
+    }
   }
 }
 </script>

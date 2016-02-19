@@ -6,7 +6,8 @@
   export default {
     methods: {
       activate () {
-        console.log('+1 Pressed')
+        // Send an event upwards to be picked up by App
+        this.$dispatch('button-pressed')
       }
     }
   }
